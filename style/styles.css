@@ -6,4 +6,84 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+  /* shared styles */
+.display-flex{
+  display: flex;
+}
+/* dark02 color style */
+.text-gray{
+  color: #424242;
+}
+/* dark03 color style  */
+.text-light-gray{
+  color:#727272;
+}
+.bg-color{
+  background-color:rgba(255, 144, 14, 0.1); 
+}
+.btn-primary{
+  background-color:#FF900E ;
+  color: #FFFFFF;
+  padding: 20px 25px;
+  border-radius: 8px;
+  border: none;
+font-size: 1.25rem;
+font-weight: 600px;
+}
+main{
+  max-width: 1440px;
+  margin: 0px auto;
+}
+  /* header styles  */
+
+  /* navbar related styles */
+  .navbar{
+   justify-content: space-between;
+   align-items: center;
+  padding: 0px 100px;   
+  /* এই খানে আমি নিজে থেকে প্যাডিং ইউজ করছি ্ওয়েবসাইটের মতো ফাকা হয়না তাই জন্য  */
+
+  }
+  .brand{
+    font-weight: 700px;
+    font-size: 3rem;
+  }
+  .nav-links{
+   
+  }
+  .nav-item{
+    list-style: none;
+    margin-right: 30px;
+  }
+ .nav-link{
+    text-decoration: none;
+    font-weight:500px;
+  }
+  .navbar, .banner{
+    max-width: 1420px;
+    margin: 0px auto;
+  }
+  /* banner related style  */
+  .banner{
+ /* padding:0px 120px; */
+  }
+  .banner-content{
+    max-width:850px ;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom:50px;
+  }
+  .banner-title{
+    font-weight: 700px;
+    font-size: 4rem;
+  }
+  .banner-image{
+    width: 100%;
+  }
+
+/* responsive media Query */
+@media screen  and  (max-width:576px){
+  .navbar, .nav-links{
+    flex-direction: column;
+  }
+}
