@@ -113,27 +113,80 @@ max-width: 530px;
 #quick-list{
 font-weight: 500;
 }
-
-
-/* responsive media Query */
-/* @media screen and (max-width: 768px) {
-  .banner {
-    padding: 50px;
-  }
+/* some  fact  related style */
+.fact-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+/* .some-facts,.section-title, .fact-description{  এই সেকশনের লেখাগুলো মাঝখানে নিতে চাইলে এগুলো ব্যবহার করা যায়।
+  text-align: center;
+ margin-bottom: 50px;
+ margin-left: auto;
+ margin-right: auto;
+ line-height:20px;
 } */
+ .fact-card{
+ border: 1px solid #FF900E ;
+ border-radius: 8px;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ width: 240px;
+ height: 240px;
+ }
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact-name{
+  font-weight: 600px;
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+.fact-description{
+  max-width: 540px;
+}
+/* sponsor related styles */
+.sponsors-info{
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sponsor-companies{
+  display: grid;
+  grid-template-columns:repeat(5,1fr) ;
+}
+.sponsor-companies img{
+  filter: grayscale(100%);
+}
+/* responsive media Query */
 @media screen  and  (max-width:576px){
   .navbar, .nav-links, .teams{
     flex-direction: column;
   }
-  .team-img-container{
+  .team-img-container, 
+  .fact-container,
+  .sponsor-companies{
     grid-template-columns: repeat(1,1fr);
   }
+.fact-container{
+  justify-items: center;
+  gap: 24px;
+}
+.sponsor-companies{
+  justify-items: center;
+  gap: 50px;
+}
+.some-facts{
+  text-align: center;
+
+}
   .our-features{
     margin-left: 20px;
   }
-  /* .banner {
-    padding: 25px;
-  } */
+
 }
 /* medium size device responsive */
 @media screen and (min-width:576px) and (max-width:992px){
@@ -143,5 +196,9 @@ font-weight: 500;
   .our-features{
     margin-left: 50px auto;
   }
-
+.sponsor-companies, .fact-container{
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+  justify-items: center;
+}
 }
