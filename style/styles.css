@@ -113,6 +113,30 @@ max-width: 530px;
 #quick-list{
 font-weight: 500;
 }
+/* Features you will love & enjoy related style  */
+.features{
+gap: 140px;
+}
+#feature-section-title{
+border-left: 5px solid #FF900E;
+padding-left: 20px;
+}
+.feature-card{
+  padding: 30px;
+margin-bottom: 20px;
+border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  
+}
+.feature-card, .feature-title{
+  font-size:1.25rem;
+  font-weight: 600px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+
 /* some  fact  related style */
 .fact-container{
   display: grid;
